@@ -1,38 +1,97 @@
-.App {
+.App{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page.memotest{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.page.memotest .table-container{
+  display: flex;
+  justify-content: center;
+}
+.page.memotest h1{
+  font-size: 60px;
+  margin: 0 0 10% 0;
+}
+.page.memotest h1.time{
+  font-size: 30px;
+  background-color: #000064;
+  width: 50%;
+  border-radius: 10px;
+  margin: 0 0 0 25%;
+}
+.page.memotest h1.points{
+  font-size: 30px;
+  background-color: #000064;
+  width: 50%;
+  border-radius: 10px;
+  margin: 10% 0 0 25%;
+}
+
+.page.home{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page.home .tittle{
+  font-size: 90px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page.home label{
+  display: block;
+  text-align: left;
+  margin: 0 25% -8%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.page.home input{
+  height: 55px;
+  width: 40%;
+  margin: 0 5%;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.page.home button{
+  margin: 10% auto;
+  width: 40%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #C55A11;
   color: white;
+  font-size: 20px;
+}
+.page.home button:focus {
+  border: none;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.page.end{
+  text-align: center;
+}
+.page.end button{
+  margin: 10% auto;
+  width: 80%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #C55A11;
+  color: white;
+  font-size: 20px;
+}
+.page.end button:focus {
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px){
+  .page.memotest{
+    display: block;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .page.home .tittle{
+    font-size: 60px;
   }
 }
